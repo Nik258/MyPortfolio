@@ -1,0 +1,232 @@
+:root {
+    --skin-color: #1a1a1a; /* Charcoal/Very Dark Gray */
+    --skin-color-light: #2d2d2d; /* Slightly lighter charcoal */
+    --skin-color-dark: #0d0d0d; /* Darker charcoal */
+    --accent-color: #f6f4d6; /* Neon Blue */
+    --accent-color-hover: #f7f4dc; /* Slightly darker neon blue for hover */
+    --text-color: #0e0e0e; /* White */
+    --text-color-light: #e0e0e0; /* Light Gray */
+    --highlight-color: #f2f0ca; /* Neon Blue for highlights */
+    --body-bg-color: #1a1a1a; /* Charcoal background */
+    --card-bg-color: #2d2d2d; /* Slightly lighter charcoal for cards */
+    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Main Elements */
+.main-container {
+    background-color: var(--body-bg-color);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--skin-color);
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .nav-link {
+    color: var(--text-color);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--highlight-color);
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--accent-color);
+    color: var(--skin-color);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--accent-color-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow);
+}
+
+/* Section Titles */
+.section-title h2 {
+    color: var(--text-color);
+}
+
+.section-title h2::before,
+.section-title h2::after {
+    background-color: var(--accent-color);
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-heading {
+    color: var(--text-color);
+}
+
+.card-text {
+    color: var(--text-color-light);
+}
+
+/* Skills */
+.skill-item {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.skill-item h5 {
+    color: var(--text-color);
+}
+
+.progress {
+    background-color: var(--skin-color-light);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-in {
+    background-color: var(--accent-color);
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    border-radius: 8px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-color);
+}
+
+/* Social Icons */
+.social-icons a {
+    background: var(--card-bg-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background: var(--accent-color);
+    color: var(--skin-color);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Scroll Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Main Elements */
+.main-container .aside {
+    background-color: var(--skin-color);
+}
+
+.main-container .aside .nav li a:hover,
+.main-container .aside .nav li a.active {
+    color: var(--accent-color);
+    background: var(--skin-color-light);
+}
+
+.main-container .aside .nav li a:hover::after,
+.main-container .aside .nav li a.active::after {
+    background-color: var(--skin-color);
+}
+
+/* Timeline */
+.timeline .circle-dot,
+.timeline .timeline-item::before {
+    background-color: var(--skin-color);
+}
+
+/* Portfolio */
+.portfolio .portfolio-item .portfolio-info {
+    background-color: var(--skin-color);
+}
+
+/* Contact */
+.contact .contact-info-item .icon {
+    background-color: var(--skin-color);
+}
+
+/* Style Switcher */
+.style-switcher .colors span.color-3 {
+    background-color: var(--skin-color);
+}
+
+/* Home Section */
+.home .home-info .name {
+    color: var(--accent-color);
+}
+
+.home .home-info .typing {
+    color: var(--accent-color);
+}
+
+/* About Section */
+.about .about-content .about-text h3 {
+    color: var(--text-color);
+}
+
+/* Education Section */
+.education .timeline .timeline-title {
+    color: var(--skin-color);
+}
+
+/* Skills Section */
+.skills .title {
+    color: var(--skin-color);
+}
+
+/* Portfolio Section */
+.portfolio .portfolio-heading h2 {
+    color: var(--skin-color);
+}
+
+/* Contact Section */
+.contact .contact-title,
+.contact .contact-sub-title {
+    color: var(--skin-color);
+}
