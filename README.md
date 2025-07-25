@@ -4,7 +4,7 @@ This is my personal portfolio website built with **HTML**, **CSS**, and **JavaSc
 
 ## 🚀 Live Demo
 
-👉 [View Live](https://nik258.github.io/MyPortfolio/) <!-- Replace with your actual link -->
+👉 [View Live](https://258portfolio.netlify.app/) <!-- Replace with your actual link -->
 
 ## ✨ Features
 
