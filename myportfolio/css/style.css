@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-/* Root Variables - Keeping your existing color scheme */
+/* Root Variables - Updated with Coolors palette */
 :root {
-    --bg-black-900: #FFF8DC; /* Light Cream */
-    --bg-black-100: #FFFFFF; /* White */
-    --bg-black-50: #F5F5DC; /* Beige */
-    --text-black-900: #2F4F4F; /* Dark Slate */
-    --text-black-700: #556B2F; /* Dark Olive */
-    --skin-color: #8FBC8F; /* Soft Olive Green */
-    --hover-color: #E2725B; /* Terracotta Orange */
-    --body-bg-color: #FFF8DC; /* Light Cream */
-    --text-color: #2F4F4F; /* Dark Slate */
-    --highlight-color: #8FBC8F; /* Soft Olive Green */
-    --card-bg-color: #FFFFFF; /* White */
-    --skin-color-light: #8FBC8F; /* Soft Olive Green */
+    --bg-black-900: #edf6f9; /* Very Light Blue */
+    --bg-black-100: #ffffff; /* White */
+    --bg-black-50: #f8fbfc; /* Extra Light Blue */
+    --text-black-900: #006d77; /* Dark Teal */
+    --text-black-700: #83c5be; /* Light Teal */
+    --skin-color: #e29578; /* Coral Orange */
+    --hover-color: #ffddd2; /* Light Peach */
+    --body-bg-color: #edf6f9; /* Very Light Blue */
+    --text-color: #006d77; /* Dark Teal */
+    --highlight-color: #e29578; /* Coral Orange */
+    --card-bg-color: #ffffff; /* White */
+    --skin-color-light: #ffddd2; /* Light Peach */
 }
 
-/* Light Theme - Consistent with your existing light theme */
+/* Light Theme - Updated with Coolors palette */
 body.light {
-    --bg-black-900: #FFF8DC;
-    --bg-black-100: #FFFFFF;
-    --bg-black-50: #F5F5DC;
-    --text-black-900: #2F4F4F;
-    --text-black-700: #556B2F;
-    --skin-color: #8FBC8F;
+    --bg-black-900: #edf6f9;
+    --bg-black-100: #ffffff;
+    --bg-black-50: #f8fbfc;
+    --text-black-900: #006d77;
+    --text-black-700: #83c5be;
+    --skin-color: #e29578;
 }
 
-/* Dark Theme - Consistent with your existing dark theme */
+/* Dark Theme - Keeping some contrast with the palette */
 body.dark {
-    --bg-black-900: #151515;
-    --bg-black-100: #222222;
-    --bg-black-50: #393939;
+    --bg-black-900: #006d77;
+    --bg-black-100: #83c5be;
+    --bg-black-50: #edf6f9;
     --text-black-900: #ffffff;
-    --text-black-700: #e9e9e9;
+    --text-black-700: #ffddd2;
 }
 
 /* General Styles */
@@ -85,20 +85,20 @@ a {
 /* Aside - Sidebar */
 .aside {
     width: 270px;
-    background: #f6eaad; /* Cream background */
+    background: #83c5be; /* Light Teal background */
     position: fixed;
     left: 0;
     top: 0;
     padding: 30px;
     height: 100%;
-    border-right: 1px solid #faf5ac;
+    border-right: 1px solid #006d77;
     display: flex;
     flex-direction: column; /* Arrange logo and nav vertically */
     justify-content: flex-start; /* Align items from the top */
     align-items: center; /* Center items horizontally */
     z-index: 10;
     transition: all 0.3s ease;
-    color: #1a237e; /* Navy blue text */
+    color: #006d77; /* Dark Teal text */
 }
 
 .aside .logo {
@@ -110,7 +110,7 @@ a {
 }
 
 .aside .logo a {
-    color: #dcdde6; /* Navy blue for logo */
+    color: #006d77; /* Dark Teal for logo */
     font-weight: 700;
     padding: 15px 20px;
     font-size: 30px;
@@ -247,16 +247,17 @@ a {
     padding-left: 270px; /* Match aside width */
     width: 100%;
     min-height: 100vh;
-    background: #020848; /* Navy blue background */
+    background: #066280; /* Navy blue background */
     transition: all 0.3s ease;
     margin-top: 80px;
     padding: 2rem;
-    color: #151514; /* Cream text */
+    color: #ececb4; /* Cream text */
 }
 
 /* Section Styles */
 .section {
-    background: #b2fbf3; /* Navy blue background for sections */
+  background: #066280; /* Navy blue background */
+    ; /* Navy blue background for sections */
     min-height: 100vh;
     display: none;
     position: fixed;
@@ -270,7 +271,7 @@ a {
     transition: all 0.3s ease;
     opacity: 0;
     transform: translateX(20px);
-    color: #0e0e0d; /* Cream text */
+    color: #ececb4; /* Cream text */
 }
 
 .section.active {
@@ -515,7 +516,7 @@ h3.my-profession {
 }
 
 .skill-card h3 {
-    color: #f6f0f0;  /* Adding white color to skill names */
+    color: #ececb4;  /* Adding white color to skill names */
     margin: 1rem 0;
 }
 
